@@ -1,0 +1,24 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Poker;
+
+public class MyDeck : MonoBehaviour
+{
+    List<PlayingCard> cards = new List<PlayingCard>();
+
+    public void Reset()
+    {
+        cards = new List<PlayingCard>();
+        for(int suit = 1; suit<=4; ++suit)
+        {
+            for(int face = 2; face <= 14; ++face)
+            {
+                PlayingCard newCard = new PlayingCard();
+                newCard.face = (Face)face;
+                newCard.suit = (Suit)suit;
+                cards.Add(newCard);
+            }
+        }
+    }
+}

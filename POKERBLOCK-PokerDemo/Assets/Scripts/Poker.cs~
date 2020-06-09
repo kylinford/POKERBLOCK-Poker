@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+
+public class Poker
+{
+    public static Dictionary<PokerRanking, string> winString = new Dictionary<PokerRanking, string>()
+    {
+        { PokerRanking.Flush, "Flush" },
+        { PokerRanking.FourOfAKind, "Four Of A Kind" },
+        { PokerRanking.FullHouse, "Full House" },
+        { PokerRanking.HighCard, "High Card" },
+        { PokerRanking.OnePair, "Pair" },
+        { PokerRanking.RoyalFlush, "Royal Flush" },
+        { PokerRanking.Straight, "Straight" },
+        { PokerRanking.StraightFlush, "Straight Flush" },
+        { PokerRanking.ThreeOfAKind, "Three Of A Kind" },
+        { PokerRanking.TwoPair, "Two Pair" }
+    };
+}
+public enum PokerRanking { HighCard = 1, OnePair, TwoPair, ThreeOfAKind, Straight, Flush, FullHouse, FourOfAKind, StraightFlush, RoyalFlush }

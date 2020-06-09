@@ -1,0 +1,12 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayingCard
+{
+    public 
+}
+
+public enum Suit { Club, Diamond, Heart, Spade }
+public enum Suit { Club, Diamond, Heart, Spade }
+
